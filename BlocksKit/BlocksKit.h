@@ -37,6 +37,7 @@ FOUNDATION_EXPORT const unsigned char BlocksKitVersionString[];
 #import <BlocksKit/BKMacros.h>
 #import <BlocksKit/NSArray+BlocksKit.h>
 #import <BlocksKit/NSDictionary+BlocksKit.h>
+#import <BlocksKit/NSHashTable+BlocksKit.h>
 #import <BlocksKit/NSIndexSet+BlocksKit.h>
 #import <BlocksKit/NSInvocation+BlocksKit.h>
 #import <BlocksKit/NSNumber+BlocksKit.h>
