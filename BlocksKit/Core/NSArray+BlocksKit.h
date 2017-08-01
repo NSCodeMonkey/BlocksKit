@@ -220,6 +220,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (BOOL)bk_corresponds:(NSArray *)list withBlock:(BOOL (^)(ObjectType obj1, id obj2))block;
 
+/**
+ Returns a random element from the receiver.
+ */
+- (nullable ObjectType)bk_sample;
+
 @end
 
 NS_ASSUME_NONNULL_END

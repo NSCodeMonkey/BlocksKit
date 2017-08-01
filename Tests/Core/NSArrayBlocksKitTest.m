@@ -237,4 +237,13 @@
 	
 }
 
+- (void)testSample
+{
+    id aa = @[@1, @2, @3].bk_sample;
+    XCTAssertNotNil(aa);
+    
+    id bb = @[].bk_sample;
+    XCTAssertNil(bb);
+}
+
 @end
