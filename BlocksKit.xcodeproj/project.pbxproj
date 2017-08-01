@@ -1095,7 +1095,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = BK;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Zachary Waldowski and Pandamonia LLC";
 				TargetAttributes = {
 					DB9B96171B3A52A700940D20 = {
@@ -1423,6 +1423,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DBBDD23E1B3A5782008909B0 /* Project-Debug.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				ENABLE_TESTABILITY = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -1433,6 +1435,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DBBDD23F1B3A5782008909B0 /* Project-Release.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -1441,6 +1445,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DB4CA3FB1B3A624B004B70F8 /* iOS-Framework.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1462,6 +1467,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DB4CA3FB1B3A624B004B70F8 /* iOS-Framework.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1585,6 +1591,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DB4CA3FC1B3A624B004B70F8 /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULEMAP_FILE = "BlocksKit/Module-iOS.modulemap";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = us.pandamonia.BlocksKit;
@@ -1599,6 +1606,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DB4CA3FC1B3A624B004B70F8 /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULEMAP_FILE = "BlocksKit/Module-iOS.modulemap";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = us.pandamonia.BlocksKit;
