@@ -6,6 +6,16 @@
 @import XCTest;
 @import BlocksKit.Dynamic.MessageUI;
 
+/**
+ It seems like showing an MFMessageComposeViewController in a test cause an exception.
+ 
+ seealso:
+ https://stackoverflow.com/questions/22335403/issue-with-unit-tests-in-xcode-5-1-ios-7-1-assertion-failure-in-bkseventfocus
+ https://github.com/jonreid/MockUIAlertViewActionSheet
+ */
+
+#if 0
+
 @interface MFMessageComposeViewControllerBlocksKitTest : XCTestCase <MFMessageComposeViewControllerDelegate>
 
 - (void)testCompletionBlock;
@@ -41,3 +51,5 @@
 }
 
 @end
+
+#endif
